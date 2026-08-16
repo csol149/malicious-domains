@@ -4,6 +4,7 @@
 
 ! Click-Fix domains
 ||1rpc.io^
+||ajnfqs.com^
 ||atomento10.icu^
 ||bacon-rumors.xyz^
 ||base.org^
