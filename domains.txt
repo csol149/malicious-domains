@@ -70,8 +70,10 @@
 ||objmapper.com^
 ||onfinality.io^
 ||packedbrick.com^
+||polygon-rpc.com^
 ||rednosehorse.com^
 ||relaxation-seed.xyz^
+||secretpi88122.life^
 ||siege-close.com^
 ||simplecopseholding.com^
 ||skillboxultra.live^
