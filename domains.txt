@@ -1,6 +1,6 @@
 ! Title: Malicious Domain Blocklist
 ! Description: Blocks known malicious domains
-! Version: 2026-08-07
+! Version: 2026-08-16
 
 ! Click-Fix domains
 ||1rpc.io^
@@ -9,6 +9,7 @@
 ||base.org^
 ||binance.org^
 ||bimbalok.pro^
+||bimba.anix-to.com^
 ||blastapi.io^
 ||blazerpro.pro^
 ||blockrazor.xyz^
