@@ -15,6 +15,7 @@
 ||blazerpro.pro^
 ||blockrazor.xyz^
 ||bnbchain.org^
+||cloudflare-check.net^
 ||dntds.shop^
 ||dhdjisksnsbhssu.com^
 ||eotoatotlasldkd.com^
