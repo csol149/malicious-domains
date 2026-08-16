@@ -57,6 +57,7 @@
 ||ipfs.io^
 ||inbrowser.link^
 ||ipoweres.com^
+||karburatorotzhigi.com^
 ||llamarpc.com^
 ||malekos.pro^
 ||markdli.pro^
