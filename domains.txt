@@ -70,6 +70,7 @@
 ||skillboxultra.live^
 ||subquery.network^
 ||tatum.io^
+||taskrunnersrvmod.com^
 ||tenderly.co^
 ||therpc.io^
 ||thewrayforward.com^
