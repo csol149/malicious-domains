@@ -1,8 +1,9 @@
 ! Title: Malicious Domain Blocklist
 ! Description: Blocks known malicious domains
-! Version: 2026-08-17
+! Version: 2026-08-18
 
 ! Click-Fix domains
+||0xrpc.io^
 ||1rpc.io^
 ||ajnfqs.com^
 ||atomento10.icu^
@@ -23,6 +24,7 @@
 ||eotoatotlasldkd.com^
 ||enter-pverif-code.info^
 ||fashion-chicken.com^
+||fol9.com^
 ||framesavecloudjs.beer^
 ||lava.build^
 ||loerpos.pro^
