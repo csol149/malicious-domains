@@ -90,6 +90,7 @@
 ||therpc.io^
 ||thewrayforward.com^
 ||versionpi81.icu^
+||wafsearch.wiki^
 ||wikkkipi12.icu^
 ||waysmakeyourlifebetter.com^
 ||yougriddonaldsfile.com^
