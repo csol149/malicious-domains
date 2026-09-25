@@ -27,6 +27,7 @@
 ||fashion-chicken.com^
 ||fol9.com^
 ||framesavecloudjs.beer^
+||interseq.at^
 ||lava.build^
 ||loerpos.pro^
 ||mon-blanc-02.cfd^
