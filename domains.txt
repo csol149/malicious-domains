@@ -1,6 +1,6 @@
 ! Title: Malicious Domain Blocklist
 ! Description: Blocks known malicious domains
-! Version: 2026-08-18
+! Version: 2026-09-25
 
 ! Click-Fix domains
 ||0xrpc.io^
@@ -28,6 +28,7 @@
 ||framesavecloudjs.beer^
 ||lava.build^
 ||loerpos.pro^
+||mon-blanc-02.cfd^
 ||niaoend.com^
 ||pocket.network^
 ||polygon.community^
