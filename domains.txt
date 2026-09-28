@@ -1,6 +1,6 @@
 ! Title: Malicious Domain Blocklist
 ! Description: Blocks known malicious domains
-! Version: 2026-09-25
+! Version: 2026-09-28
 
 ! Click-Fix domains
 ||0xrpc.io^
@@ -76,6 +76,7 @@
 ||llamarpc.com^
 ||malekos.pro^
 ||markdli.pro^
+||mc.yandex.ru^
 ||newgoodfoodmarket.com^
 ||nodies.app^
 ||objmapper.com^
