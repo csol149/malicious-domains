@@ -30,6 +30,7 @@
 ||interseq.at^
 ||lava.build^
 ||loerpos.pro^
+||meowrpc.com^
 ||mesa-zaimmuen.life^
 ||mon-blanc-02.cfd^
 ||norediam.com^
@@ -87,6 +88,7 @@
 ||rednosehorse.com^
 ||relaxation-seed.xyz^
 ||secretpi88122.life^
+||securedatabase.download^
 ||siege-close.com^
 ||simplecopseholding.com^
 ||skillboxultra.live^
