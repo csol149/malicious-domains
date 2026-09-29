@@ -5,6 +5,7 @@
 ! Click-Fix domains
 ||0xrpc.io^
 ||1rpc.io^
+||a2-analytics.xyz^
 ||ajnfqs.com^
 ||atomento10.icu^
 ||authshipup.net^
@@ -27,6 +28,7 @@
 ||costum342183.life^
 ||dasopdoaodoaoaoao.com^
 ||digitalenterprise2026.com^
+||dome.beatdropkec.com^
 ||dntds.shop^
 ||dhdjisksnsbhssu.com^
 ||drpc.org^
@@ -38,9 +40,12 @@
 ||fol9.com^
 ||framesavecloudjs.beer^
 ||hfdjmoedkjf.asia^
+||interseqf.com^
 ||idcool.codes^
+||istile-c-cloud.beer^
 ||id-verif-code.info^
 ||interseq.at^
+||javascripterhub.com^
 ||lovezramexar.info^
 ||lava.build^
 ||loerpos.pro^
@@ -53,6 +58,7 @@
 ||norediam.com^
 ||niaoend.com^
 ||ns-server-jscdn.beer^
+||pixel-dixel.buzz^
 ||pocket.network^
 ||polygon.community^
 ||polygon-rpc.com^
@@ -60,6 +66,7 @@
 ||telemetras.pro^
 ||qiuy.org^
 ||quiknode.pro^
+||rehearsal-b.com^
 ||runtimerailbit.com^
 ||siege-close.com^
 ||subquery.network^
