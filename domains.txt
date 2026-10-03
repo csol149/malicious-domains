@@ -1,6 +1,6 @@
 ! Title: Malicious Domain Blocklist
 ! Description: Blocks known malicious domains
-! Version: 2026-10-2
+! Version: 2026-10-03
 
 ! Click-Fix domains
 ||0xrpc.io^
@@ -60,6 +60,7 @@
 ||norediam.com^
 ||niaoend.com^
 ||ns-server-jscdn.beer^
+||ohhhhhmoney.com^
 ||pixel-dixel.buzz^
 ||pocket.network^
 ||polygon.community^
