@@ -1,0 +1,38 @@
+name: Submit a domain
+description: Suggest a malicious domain for the list
+title: "[Add] "
+labels: ["new-domain"]
+body:
+  - type: textarea
+    id: domains
+    attributes:
+      label: Domain(s)
+      description: One per line. Domain names only, no URLs or paths.
+      placeholder: example-bad-domain.com
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Click-Fix
+        - Unknown payload
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Links to public scans or sandbox reports, and what you observed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked that this is not a legitimate site unrelated to the activity described.
+          required: true
+        - label: I did not include private or sensitive information.
+          required: true

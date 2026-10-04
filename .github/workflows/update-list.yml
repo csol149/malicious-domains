@@ -1,0 +1,69 @@
+name: Update list
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - domains.txt
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Action
+        type: choice
+        options:
+          - add
+          - remove
+        required: true
+      category:
+        description: Category (only used for add)
+        type: choice
+        options:
+          - click-fix
+          - unknown-payload
+        default: click-fix
+      domains:
+        description: Domains, separated by spaces or commas
+        type: string
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-list
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add or remove domains
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          ACTION: ${{ inputs.action }}
+          CATEGORY: ${{ inputs.category }}
+          DOMAINS: ${{ inputs.domains }}
+        run: |
+          if [ "$ACTION" = "add" ]; then
+            python3 scripts/blocklist.py add --category "$CATEGORY" --domains "$DOMAINS"
+          else
+            python3 scripts/blocklist.py remove --domains "$DOMAINS"
+          fi
+
+      - name: Sort, dedupe and bump version
+        if: github.event_name == 'push'
+        run: python3 scripts/blocklist.py normalize
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add domains.txt CHANGELOG.md
+          git commit -m "chore: update list ($(date -u +%F))"
+          git push

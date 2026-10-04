@@ -1,8 +1,11 @@
 ! Title: Malicious Domain Blocklist
 ! Description: Blocks known malicious domains
-! Version: 2026-10-03
+! Version: 2026-10-04
+! Homepage: https://github.com/csol149/malicious-domains
+! License: MIT
 
 ! Click-Fix domains
+
 ||0xrpc.io^
 ||1rpc.io^
 ||a2-analytics.xyz^
@@ -12,81 +15,81 @@
 ||bacon-rumors.xyz^
 ||barn.blinqueofficial.com^
 ||base.org^
-||binance.org^
-||bimbalok.pro^
 ||bimba.anix-to.com^
+||bimbalok.pro^
+||binance.org^
 ||blastapi.io^
 ||blazerpro.pro^
 ||blockrazor.xyz^
 ||bnbchain.org^
-||casinodas.com^
 ||cabskaiyn-crane.life^
+||casinodas.com^
 ||chordapple.com^
 ||cloudeccentric.cc^
 ||cloudflare-check.net^
 ||correspondabb.com^
 ||costum342183.life^
 ||dasopdoaodoaoaoao.com^
-||digitalenterprise2026.com^
-||dome.beatdropkec.com^
-||dntds.shop^
 ||dhdjisksnsbhssu.com^
+||digitalenterprise2026.com^
+||dntds.shop^
+||dome.beatdropkec.com^
 ||drpc.org^
-||eotoatotlasldkd.com^
 ||enter-pverif-code.info^
 ||entry-code-cdn.codes^
-||fingerprint-verification.info^
+||eotoatotlasldkd.com^
 ||fashion-chicken.com^
+||fingerprint-verification.info^
 ||fol9.com^
 ||framesavecloudjs.beer^
 ||fri-dod-01.cfd^
 ||hfdjmoedkjf.asia^
-||interseqf.com^
-||idcool.codes^
-||istile-c-cloud.beer^
 ||id-verif-code.info^
+||idcool.codes^
 ||interseq.at^
+||interseqf.com^
+||istile-c-cloud.beer^
 ||javascripterhub.com^
-||lovezramexar.info^
-||luqiuid91.com^
 ||lava.build^
 ||loerpos.pro^
-||mioiooo.icu^
+||lovezramexar.info^
+||luqiuid91.com^
 ||makeverizyjar.info^
 ||mathandchessss.com^
 ||meowrpc.com^
 ||mesa-zaimmuen.life^
+||mioiooo.icu^
 ||mon-blanc-02.cfd^
-||norediam.com^
 ||niaoend.com^
+||norediam.com^
 ||ns-server-jscdn.beer^
 ||ohhhhhmoney.com^
 ||pixel-dixel.buzz^
 ||pocket.network^
-||polygon.community^
 ||polygon-rpc.com^
+||polygon.community^
 ||publicnode.com^
-||telemetras.pro^
 ||qiuy.org^
 ||quiknode.pro^
 ||rehearsal-b.com^
 ||runtimerailbit.com^
-||siege-close.com^
-||subquery.network^
 ||sdntds.shop^
 ||senterprise2026.com^
 ||servicestatlab.com^
+||siege-close.com^
+||subquery.network^
+||telemetras.pro^
+||therpc.io^
 ||trackerredirect.online^
 ||triapfog.com^
-||therpc.io^
 ||trokuni412.icu^
 ||velvetreoskslaon.pro^
 ||webanalytics-cdn.sbs^
 ||wmicconfidance.info^
 ||zooparkko.com^
 
+! Unknown payload
 
-! unknown payload
 ||advanceslibrary.com^
 ||algo2nest.info^
 ||alkociferblat.cc^
@@ -101,21 +104,21 @@
 ||blessedwirrow.org^
 ||captioto.com^
 ||clouderfaster.cc^
-||cryptobasetop.top^
 ||cptoptious.com^
+||cryptobasetop.top^
 ||datadock.info^
 ||ethpandaops.io^
-||fsdmkfskdojyttt.pro^
 ||football-attraction.pro^
+||fsdmkfskdojyttt.pro^
 ||getfix.win^
 ||goodpersonofourcentury.com^
 ||hypersync.xyz^
-||ipfs.io^
 ||inbrowser.link^
+||ipfs.io^
 ||ipoweres.com^
 ||karburatorotzhigi.com^
-||love-support.world^
 ||llamarpc.com^
+||love-support.world^
 ||malekos.pro^
 ||markdli.pro^
 ||mc.yandex.ru^
@@ -131,13 +134,13 @@
 ||securedatabase.download^
 ||simplecopseholding.com^
 ||skillboxultra.live^
-||tatum.io^
 ||taskrunnersrvmod.com^
+||tatum.io^
 ||tenderly.co^
 ||thewrayforward.com^
 ||versionpi81.icu^
 ||wafsearch.wiki^
-||wikkkipi12.icu^
 ||waysmakeyourlifebetter.com^
+||wikkkipi12.icu^
 ||yougriddonaldsfile.com^
 ||zen.claims^
