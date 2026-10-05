@@ -2,6 +2,7 @@
 
 ## 2026-10-05
 
+- Removed `example.com`
 - Added `example.com` (click-fix)
 - Removed `example.com`
 - Added `example.com` (click-fix)
