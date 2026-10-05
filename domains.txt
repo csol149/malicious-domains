@@ -1,6 +1,7 @@
 ! Title: Malicious Domain Blocklist
 ! Description: Blocks known malicious domains
 ! Version: 2026-10-05
+! Expires: 6 hours
 ! Homepage: https://github.com/csol149/malicious-domains
 ! License: MIT
 
