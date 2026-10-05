@@ -103,7 +103,7 @@ def render(header, sections, version):
     return "\n".join(out) + "\n"
 
 
-def update_changelog(version, old_map, new_map):
+def update_changelog(version, old_map, new_map, header_changed=False):
     lines = [f"- Added `{d}` ({new_map[d]})" for d in sorted(new_map) if d not in old_map]
     lines += [
         f"- Moved `{d}` to {new_map[d]}"
@@ -111,6 +111,8 @@ def update_changelog(version, old_map, new_map):
         if d in old_map and old_map[d] != new_map[d]
     ]
     lines += [f"- Removed `{d}`" for d in sorted(old_map) if d not in new_map]
+    if header_changed:
+        lines.append("- Updated list metadata")
     if not lines:
         return
     text = CHANGELOG.read_text() if CHANGELOG.exists() else "# Changelog\n"
@@ -131,14 +133,41 @@ def update_changelog(version, old_map, new_map):
     CHANGELOG.write_text("\n".join(rows).rstrip("\n") + "\n")
 
 
-def finalize(old_text, header, old_map, sections):
-    if render(header, sections, get_version(header)) == old_text:
+def strip_version(text):
+    return "\n".join(
+        line for line in text.splitlines() if not VERSION_RE.match(line.strip())
+    ).strip()
+
+
+def finalize(old_text, header, old_map, sections, previous_text=None):
+    rendered = render(header, sections, get_version(header))
+    baseline = previous_text if previous_text is not None else old_text
+    if previous_text is not None:
+        try:
+            prev_header, prev_entries, prev_problems = parse(previous_text)
+            if not prev_problems:
+                old_map = to_map(prev_entries)
+        except Exception:
+            pass
+    needs_bump = (
+        rendered != old_text or strip_version(rendered) != strip_version(baseline)
+    )
+    if not needs_bump:
         print("No changes.")
         return 0
     version = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    LIST_FILE.write_text(render(header, sections, version))
+    new_text = render(header, sections, version)
+    if new_text == old_text:
+        print("No changes.")
+        return 0
+    LIST_FILE.write_text(new_text)
     new_map = to_map(sections)
-    update_changelog(version, old_map, new_map)
+    header_changed = False
+    if previous_text is not None:
+        prev_head = [h for h in parse(previous_text)[0] if not VERSION_RE.match(h)]
+        new_head = [h for h in header if not VERSION_RE.match(h)]
+        header_changed = prev_head != new_head
+    update_changelog(version, old_map, new_map, header_changed)
     total = sum(len(v) for v in sections.values())
     print(f"Updated to version {version}: {total} domains "
           f"({len(sections['click-fix'])} click-fix, {len(sections['unknown-payload'])} unknown-payload).")
@@ -174,10 +203,11 @@ def cmd_validate(_args):
     return 0
 
 
-def cmd_normalize(_args):
+def cmd_normalize(args):
     text, header, entries, problems = load()
     require_clean(problems)
-    return finalize(text, header, to_map(entries), consolidate(entries))
+    previous = Path(args.previous).read_text() if args.previous else None
+    return finalize(text, header, to_map(entries), consolidate(entries), previous)
 
 
 def cmd_add(args):
@@ -227,7 +257,9 @@ def main():
     p = argparse.ArgumentParser(description="Maintain domains.txt")
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("validate").set_defaults(fn=cmd_validate)
-    sub.add_parser("normalize").set_defaults(fn=cmd_normalize)
+    n = sub.add_parser("normalize")
+    n.add_argument("--previous", help="file with the previous version of domains.txt")
+    n.set_defaults(fn=cmd_normalize)
     a = sub.add_parser("add")
     a.add_argument("--category", required=True, choices=list(SECTIONS))
     a.add_argument("--domains", required=True)
