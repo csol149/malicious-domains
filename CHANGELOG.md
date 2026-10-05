@@ -2,6 +2,7 @@
 
 ## 2026-10-05
 
+- Added `browseid.codes` (click-fix)
 - Added `dnsnewtds.shop` (click-fix)
 - Added `misty-ripple-lark-kraiara.top` (click-fix)
 - Added `ntdnewtds.shop` (click-fix)
