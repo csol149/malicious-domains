@@ -48,9 +48,10 @@ jobs:
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
           permission-contents: write
 
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           token: ${{ steps.app-token.outputs.token }}
+          fetch-depth: 2
 
       - name: Add or remove domains
         if: github.event_name == 'workflow_dispatch'
@@ -67,7 +68,14 @@ jobs:
 
       - name: Sort, dedupe and bump version
         if: github.event_name == 'push'
-        run: python3 scripts/blocklist.py normalize
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if git show "$BEFORE:domains.txt" > "$RUNNER_TEMP/previous.txt" 2>/dev/null; then
+            python3 scripts/blocklist.py normalize --previous "$RUNNER_TEMP/previous.txt"
+          else
+            python3 scripts/blocklist.py normalize
+          fi
 
       - name: Commit changes
         run: |
