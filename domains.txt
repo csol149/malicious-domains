@@ -38,6 +38,7 @@
 ||enter-pverif-code.info^
 ||entry-code-cdn.codes^
 ||eotoatotlasldkd.com^
+||example.com^
 ||fashion-chicken.com^
 ||fingerprint-verification.info^
 ||fol9.com^
