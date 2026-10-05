@@ -2,6 +2,11 @@
 
 ## 2026-10-05
 
+- Added `dnsnewtds.shop` (click-fix)
+- Added `misty-ripple-lark-kraiara.top` (click-fix)
+- Added `ntdnewtds.shop` (click-fix)
+- Added `thu-ipad-03.cfd` (click-fix)
+- Added `web-security.beer` (click-fix)
 - Removed `example.com`
 - Added `example.com` (click-fix)
 - Removed `example.com`
