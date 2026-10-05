@@ -2,6 +2,14 @@
 
 ## 2026-10-05
 
+- Added `aleverifocation.beer` (click-fix)
+- Added `campaigntracker.icu` (click-fix)
+- Added `fingerprint-veri.info` (click-fix)
+- Added `humanwebpage.online` (click-fix)
+- Added `sex-reputation.com` (click-fix)
+- Added `ultraspeed.pro` (click-fix)
+- Added `updateocean.com` (click-fix)
+- Added `xaz2.com` (click-fix)
 - Added `idcheckbrowese.codes` (click-fix)
 - Added `noon.cafemartinezsa.com` (click-fix)
 - Added `browseid.codes` (click-fix)
