@@ -2,18 +2,18 @@ name: Validate
 
 on:
   pull_request:
-    paths:
-      - domains.txt
-      - scripts/**
   workflow_dispatch:
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   validate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - name: Validate list
         run: python3 scripts/blocklist.py validate

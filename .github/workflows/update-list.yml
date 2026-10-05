@@ -26,8 +26,7 @@ on:
         type: string
         required: true
 
-permissions:
-  contents: write
+permissions: {}
 
 concurrency:
   group: update-list
@@ -35,9 +34,23 @@ concurrency:
 
 jobs:
   update:
+    if: github.repository_owner == 'csol149'
     runs-on: ubuntu-latest
+    environment: blocklist-bot
+    permissions:
+      contents: read
     steps:
+      - name: Create app token
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          permission-contents: write
+
       - uses: actions/checkout@v7
+        with:
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Add or remove domains
         if: github.event_name == 'workflow_dispatch'
