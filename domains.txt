@@ -17,6 +17,7 @@
 ||bacon-rumors.xyz^
 ||barn.blinqueofficial.com^
 ||base.org^
+||besthappyfamily.com^
 ||bimba.anix-to.com^
 ||bimbalok.pro^
 ||binance.org^
@@ -49,6 +50,7 @@
 ||fol9.com^
 ||framesavecloudjs.beer^
 ||fri-dod-01.cfd^
+||goodpersonofourcentury.com^
 ||hfdjmoedkjf.asia^
 ||humanwebpage.online^
 ||id-verif-code.info^
@@ -99,6 +101,7 @@
 ||ultraspeed.pro^
 ||updateocean.com^
 ||velvetreoskslaon.pro^
+||waysmakeyourlifebetter.com^
 ||web-security.beer^
 ||webanalytics-cdn.sbs^
 ||wmicconfidance.info^
