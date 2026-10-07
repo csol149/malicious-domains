@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07
+
+- Removed `besthappyfamily.com`
+- Removed `goodpersonofourcentury.com`
+- Removed `waysmakeyourlifebetter.com`
+
 ## 2026-10-05
 
 - Added `aleverifocation.beer` (click-fix)

@@ -1,6 +1,6 @@
 ! Title: Malicious Domain Blocklist
 ! Description: Blocks known malicious domains
-! Version: 2026-10-05
+! Version: 2026-10-07
 ! Expires: 6 hours
 ! Homepage: https://github.com/csol149/malicious-domains
 ! License: MIT
@@ -114,7 +114,6 @@
 ||apidevst.com^
 ||auth-id-browser.info^
 ||beroniw.com^
-||besthappyfamily.com^
 ||blacksaltys.com^
 ||blackshelter.org^
 ||blazkyr.top^
@@ -128,7 +127,6 @@
 ||football-attraction.pro^
 ||fsdmkfskdojyttt.pro^
 ||getfix.win^
-||goodpersonofourcentury.com^
 ||hypersync.xyz^
 ||inbrowser.link^
 ||ipfs.io^
@@ -157,7 +155,6 @@
 ||thewrayforward.com^
 ||versionpi81.icu^
 ||wafsearch.wiki^
-||waysmakeyourlifebetter.com^
 ||wikkkipi12.icu^
 ||yougriddonaldsfile.com^
 ||zen.claims^
